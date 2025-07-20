@@ -1,6 +1,3 @@
-# MMDA-Traffic-Spatial-Dashboard
-MMDA Traffic Spatial Dashboard is a simple yet powerful web-based tool designed to visualize real-time and historical traffic data across Metro Manila.
-
 # MMDA Traffic Spatial Dashboard
 
 The **MMDA Traffic Spatial Dashboard** is a simple yet effective web-based application built to visualize and interpret traffic conditions across Metro Manila. This project leverages spatial data and traffic information to help users better understand congestion patterns using a clean, user-friendly interface.
@@ -19,7 +16,7 @@ Designed for both commuters and planners, the dashboard uses traffic data stored
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |------------|---------|
