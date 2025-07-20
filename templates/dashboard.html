@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traffic Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .chart-full {
+            width: 100%;
+        }
+
+        .chart-half {
+            width: 48%;
+        }
+
+        iframe {
+            border: none;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div style="padding: 20px; color: white; font-family: 'Poppins', sans-serif;">
+  <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Metro Manila Traffic Incident Dashboard</h1>
+  <p style="font-size: 1.1rem; max-width: 1200px;">
+    It includes maps and charts showing the most affected cities, peak accident hours, types of vehicles involved,
+    monthly trends, and even a prediction of traffic blockage risks by hour.
+  </p>
+</div>
+    <div class="container">
+        <div class="chart-full">{{ chart_map|safe }}</div>
+
+        <div class="row">
+            <div class="chart-half">{{ chart_doughnut|safe }}</div>
+            <div class="chart-half">{{ chart_bar|safe }}</div>
+        </div>
+
+        <div class="chart-full">{{ chart_line|safe }}</div>
+
+        <div class="row">
+            <div class="chart-half">{{ chart_city_bar|safe }}</div>
+            <div class="chart-half">{{ chart_monthly|safe }}</div>
+        </div>
+
+        <div class="chart-full">{{ chart_predict|safe }}</div>
+    </div>
+    <footer>
+        <div style="text-align: center; padding: 20px; color: white; font-family: 'Poppins', sans-serif;">
+            <p>© 2023 Traffic Dashboard. All rights reserved.</p>
+            <p>Developed by Huntrix</p>
+        </div>
+    </footer>
+</body>
+</html>
