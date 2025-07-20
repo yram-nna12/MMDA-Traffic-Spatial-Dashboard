@@ -16,6 +16,16 @@ Designed for both commuters and planners, the dashboard uses traffic data stored
 
 ---
 
+## Sample Data Format
+
+|      Location      | Traffic Level |    Timestamp       |
+|--------------------|---------------|--------------------|
+| **EDSA - Cubao**   |	   Heavy	   | 2025-07-20 08:00 AM|
+| **C5 - BGC Exit**  |	  Moderate   | 2025-07-20 08:00 AM|
+| **Roxas Boulevard**|	   Light	   | 2025-07-20 08:00 AM|
+
+---
+
 ## Technologies Used
 
 | Technology | Purpose |
@@ -24,6 +34,23 @@ Designed for both commuters and planners, the dashboard uses traffic data stored
 | **HTML**   | Structure and layout of the dashboard |
 | **CSS**    | Styling and responsiveness |
 | **Excel (.xlsx)** | Source of traffic data (static or simulated) |
+
+---
+
+## How to Run the Project
+
+### 1.Clone the repository:
+
+git clone https://github.com/your-username/mmda-traffic-spatial-dashboard.git
+cd mmda-traffic-spatial-dashboard
+
+### 2.Install dependencies:
+
+pip install flask pandas openpyxl
+
+### 3.Run the backend (if used):
+
+python app.py and open your browser and go to: http://localhost:5000 (example only)
 
 ---
 
