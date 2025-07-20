@@ -42,6 +42,7 @@ Designed for both commuters and planners, the dashboard uses traffic data stored
 ### 1.Clone the repository:
 
 git clone https://github.com/yram-nna12/mmda-traffic-spatial-dashboard.git
+
 cd mmda-traffic-spatial-dashboard
 
 ### 2.Install dependencies:
